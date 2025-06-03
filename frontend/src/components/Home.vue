@@ -4,10 +4,10 @@ const goTo = (path) => {
 };
 </script>
 <template>
-    <v-img cover src="../../public/german_flag.png" height="300px" class="hero-banner">
+    <v-img cover src="/german_flag.png" height="300px" class="hero-banner">
         <div class="text-center text-white text-overlay">
             <h1 class="welcome-text">Willkommen!</h1>
-            <h2 class="subtitle-1">Welcome to DANK Milwaukee – Promoting German-American culture through music, dance, and more!</h2>
+            <h2 class="subtitle-1">Welcome to DANK Milwaukee - Promoting German-American culture through music, dance, and more!</h2>
         </div>
     </v-img>
     <v-container class="about-section py-6">
@@ -27,7 +27,7 @@ const goTo = (path) => {
     <v-row justify="center" align="stretch" dense>
         <v-col cols="12" md="4" class="pa-4">
         <v-card class="hover-card" @click="goTo('/choir')">
-            <v-img src="../../public/singers.png" height="200px" cover></v-img>
+            <v-img src="/singers.png" height="200px" cover></v-img>
             <v-card-title>Choir</v-card-title>
             <v-card-text>
             Learn more about our choir and how to join rehearsals or performances.
@@ -37,7 +37,7 @@ const goTo = (path) => {
 
         <v-col cols="12" md="4" class="pa-4">
         <v-card class="hover-card" @click="goTo('/adultdancers')">
-            <v-img src="../../public/dancers.jpg" height="200px" cover></v-img>
+            <v-img src="/dancers.jpg" height="200px" cover></v-img>
             <v-card-title>Adult Dance Group</v-card-title>
             <v-card-text>
             Join our adult folk dancers and keep the traditions alive through movement.
@@ -47,7 +47,7 @@ const goTo = (path) => {
 
         <v-col cols="12" md="4" class="pa-4">
         <v-card class="hover-card" @click="goTo('/kinderdancers')">
-            <v-img src="../../public/kinders.png" height="200px" cover></v-img>
+            <v-img src="/kinders.png" height="200px" cover></v-img>
             <v-card-title>Kinder Dance Group</v-card-title>
             <v-card-text>
                 Our children's dance group will learn traditional dances in a fun, inviting environment.
