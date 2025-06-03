@@ -7,7 +7,7 @@ const goTo = (path) => {
     <v-img cover src="/german_flag.png" height="300px" class="hero-banner">
         <div class="text-center text-white text-overlay">
             <h1 class="welcome-text">Willkommen!</h1>
-            <h2 class="subtitle-1">Welcome to DANK Milwaukee - Promoting German-American culture through music, dance, and more!</h2>
+            <h2 class="subtitle-1 welcome-msg">Welcome to DANK Milwaukee - Promoting German-American culture through music, dance, and more!</h2>
         </div>
     </v-img>
     <v-container class="about-section py-6">
@@ -79,5 +79,14 @@ const goTo = (path) => {
   max-width: 800px;
   margin: 0 auto;
   color: #333;
+}
+
+@media (max-width: 768px) {
+    .welcome-text {
+        font-size: 40px;
+    }
+    .welcome-msg {
+        font-size: 20px;
+    }
 }
 </style>

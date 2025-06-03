@@ -31,7 +31,7 @@ const goTo = (path) => {
 <template>
 <v-app>
     <v-app-bar color="#dce1e6" prominent  height="110">
-        <div class="d-flex align-center clickable" @click="goTo('/')">
+        <div class="title-section d-flex align-center clickable" @click="goTo('/')">
             <img src="./assets/dankLogo.png" class="dankLogo" />
         
             <div class="dankTitleGroup">
@@ -49,7 +49,7 @@ const goTo = (path) => {
     <v-main class="mainContent">
         <component :is="currentView"></component>
     </v-main>
-    <v-footer color="#003399" app padless>
+    <v-footer color="#1E293B" padless>
         <v-container class="py-4" fluid>
             <p class="footerText">
             © 2025 DANK Milwaukee — All rights reserved.
@@ -102,5 +102,17 @@ const goTo = (path) => {
 .footerText {
   font-size: 14px;
   color: #CBD5E1;
+}
+
+@media (max-width: 768px) {
+  .navButtonGroup, .subtitle {
+    display: none;
+  }
+  .dankTitle {
+    font-size: 21px;
+  }
+  .title-section {
+    width: 100%;
+  }
 }
 </style>
