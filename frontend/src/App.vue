@@ -8,7 +8,7 @@ import KinderDancers from './components/KinderDancers.vue';
 const routes = {
   '/': Home,
   '/choir': Choir,
-  '/adultdancers': AdultDancers,
+  '/adultdancegroup': AdultDancers,
   '/kinderdancers': KinderDancers
 }
 
@@ -42,7 +42,7 @@ const goTo = (path) => {
         <v-spacer></v-spacer>
         <div class="navButtonGroup">
             <v-btn text @click="goTo('/choir')" class="navBtn">Choir</v-btn>
-            <v-btn text @click="goTo('/adultdancers')" class="navBtn">Adult Dancers</v-btn>
+            <v-btn text @click="goTo('/adultdancegroup')" class="navBtn">Adult Folk Dancers</v-btn>
             <v-btn text @click="goTo('/kinderdancers')" class="navBtn">Kinder Dancers</v-btn>
         </div>
     </v-app-bar>

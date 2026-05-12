@@ -13,10 +13,14 @@ const goTo = (path) => {
     <v-container class="about-section py-6">
         <v-row justify="center">
             <v-col cols="12" md="10">
-            <p class="text-body-1 text-center">
+            <p class="text-body-0 text-center">
                 <strong>DANK Milwaukee</strong> was founded in 1960 and is one of the chapters of 
                 <a href="https://dank.org/" target="_blank">DANK National</a>. DANK Milwaukee participates in 
                 many local events such as Germanfest, Maifest, several Oktoberfests, and more.
+            </p>
+
+            <p class="text-body-0 text-center">
+                If you are interested in joining <strong>DANK Milwaukee</strong> or would just like more information, <a href="https://forms.gle/GypzzjzNg8Nxr3wGA">sign up here!</a>
             </p>
             </v-col>
         </v-row>
@@ -36,7 +40,7 @@ const goTo = (path) => {
         </v-col>
 
         <v-col cols="12" md="4" class="pa-4">
-        <v-card class="hover-card" @click="goTo('/adultdancers')">
+        <v-card class="hover-card" @click="goTo('/adultdancegroup')">
             <v-img src="/dancers.jpg" height="200px" cover></v-img>
             <v-card-title>Adult Dance Group</v-card-title>
             <v-card-text>
